@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title></title>
+     <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+ <style type="text/css">
+         *{
+            box-sizing: border-box;
+         }
+         .car{
+            background-color: #fafafa;
+           
+            }
+         .car-cell{
+            width: 30%;
+            height: 350px;
+            margin-right: 10px;
+            background-color: white;
+            border: 1.5px solid black;
+            counter-increment: car-cell;
+
+         }
+         .car-cell:beffore{
+            display: block;
+            text-align: center;
+            content: counter(car-cell);
+            line-height: 200px;
+            font-size: 80px;color: white;
+         }
+         .center {
+             border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            }
+     </style>
+</head>
+    
+  
+ <body>
+    <div class="car" data-flickity>
+        <div class="car-cell">
+            <img src="images/avatar.png" alt="Avatar" class="center">
+            <center><h3>Avatar </h3></center>
+        </div>
+        <div class="car-cell">
+            <img src="images/avatar1.png" alt="Avatar" style="margin-left: 135px;">       
+        </div>
+        <div class="car-cell">
+            <img src="images/avatar1.png" alt="Avatar" style="margin-left: 135px;">
+        </div>
+          
+    </div>
+ 
+ </body>
+ </html>
