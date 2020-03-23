@@ -1132,8 +1132,8 @@ http://www.tooplate.com/view/2098-health
     background-color: #fafafa;
     }
 .car-cell{
-  width: 88%;
-  height: 350px;
+  width: 60%;
+  height: 500px;
   margin-right: 10px;
   background-color: white;
   border: 1.5px solid black;
@@ -1176,4 +1176,41 @@ http://www.tooplate.com/view/2098-health
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+}
+
+
+
+.doctors-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-right: 20px;
+  background-color: #fff;
+  width: 330px;
+  border: 2px solid #1dd2b0;
+
+}
+.doctors-card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+ 
+.doctors-logo{  
+  width: 326px;
+  height: 320px;
+}
+.doctors-container
+{
+  background-color: #fff;
+  padding-left: 5px;
+  text-align: justify;
+  padding-right: 5px;
+
+}
+.doctors-contact{
+  margin-left:  33.5%;
+}
+
+.service-logo{
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
 }
