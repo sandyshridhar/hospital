@@ -59,29 +59,42 @@ http://www.tooplate.com/view/2098-health
 
 
      <!-- HEADER -->
-     <!-- <header>
+     <header>
           <div class="container">
                <div class="row">
 
-                    <div class="col-md-4 col-sm-5">
-                         <p>Welcome to a Frenchs Forest Doctors</p>
+                    <div class="col-md-4 col-sm-6">
+                         <span class="map-icon"><i class="fa fa-map-marker" aria-hidden="true" style="padding-top: 12px;color: #747474;"></i> 24 French Forest Road East French Forest New South Wales-2086.</span>
+                         
                     </div>
                          
-                    <div class="col-md-8 col-sm-7 text-align-right">
-                         <span class="phone-icon"><i class="fa fa-phone"></i> 010-060-0160</span>
-                         <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 6:00 AM - 10:00 PM (Mon-Fri)</span>
-                         <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></span>
+                    <div class="col-md-8 col-sm-6 ">
+                         <div class="col-md-2 col-sm-2 ">
+                              <span class="phone-icon"><i class="fa fa-phone"></i> (02)94513722</span>
+                         </div>
+                         <div class="col-md-4 col-sm-1 ">
+
+                               <span class="email-icon"  ><i class="fa fa-envelope-o"></i> <a href="#">info@frenchforestdoctors.com.au</a></span>
+                         </div>
+                         <div class="col-md-2 col-sm-3 " style="width: 50%;">
+                                                           <span class="date-icon" ><i class="fa fa-calendar-plus-o"></i> 08:00 - 19:00 (Mon-Fri)
+                                                                                       09:00 - 16:00 (Sat)
+                                                                                       21:00 - 13:00 (Sun)   </span>
+                         </div>
                     </div>
 
                </div>
           </div>
      </header>
- -->
+
+ 
 
      <!-- MENU -->
-     <div id="sticky-wrapper" class="sticky-wrapper" style="height: 76px;">
-     <section class="navbar navbar-default navbar-static-top" role="navigation">
-          <div class="container">
+     
+
+     <section class="navbar navbar-default navbar-static-top" role="navigation" >
+          <div class="container-fluid">
+
 
                <div class="navbar-header">
                     <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -89,6 +102,8 @@ http://www.tooplate.com/view/2098-health
                          <span class="icon icon-bar"></span>
                          <span class="icon icon-bar"></span>
                     </button>
+
+
 
                     <!-- lOGO TEXT HERE -->
                     <img src="images/logo.jpg" style="margin-top: 2px;margin-left: -7px;">
@@ -114,8 +129,7 @@ http://www.tooplate.com/view/2098-health
                </div>
           </div> 
      </section>
-     </div>
-      
+     
            
         
 
@@ -146,11 +160,11 @@ http://www.tooplate.com/view/2098-health
                                    </div>
                               </div>
 
-                              <div class="item item-third">
+                              <div class="item item-second">
                                    <div class="caption">
                                         <div class="col-md-offset-1 col-md-10">
-                                             <h3>Pellentesque nec libero nisi</h3>
-                                             <h1>Your Health Benefits</h1>
+                                             <h1>Bringing Health</h1>
+                                             <h3>to life for the whole family.</h3>
                                              <!-- <a href="#news" class="section-btn btn btn-default btn-blue smoothScroll">Read Stories</a> -->
                                         </div>
                                    </div>
@@ -174,24 +188,51 @@ http://www.tooplate.com/view/2098-health
 
                     <div class="clearfix"></div>
 
-                    <div class="col-md-6 col-sm-6 ">
+                    <div class="col-md-6 col-sm-6 " style="margin-top: 20px;">
                          <div class="team-thumb1 wow fadeInUp card" data-wow-delay="0.2s">
-                                   <div class="team-info" style="text-align: center; height: 400px;">
-                                        <img src="images/physio1.png" class="service-logo">
-                                        <h3>Physiotherapy</h3>
+                              <div class="team-info" style="text-align: center; ">
+                                        <img src="images/general.png" class="service-logo">
+                                        <h3>General Medicine</h3>
                                         <p>General Principal</p> 
                                         <button type="button" class="form-control collaps" ><b>Open Section 1 </b><b style="float: right;">+</b></button>
                                         <div class="content1">
                                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                         </div> 
-                                        <br>      
-                                   </div>
+                                        <br> 
+                                        <button type="button" class="form-control collaps" ><b>Open Section 1 </b><b style="float: right;">+</b></button>
+                                        <div class="content1">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                        <br>
+                                        <div class="tab">
+                                               <button class="tablinks" onclick="openCity(event, 'key1')" id="defaultOpen">London</button>
+                                               <button class="tablinks" onclick="openCity(event, 'key2')">Paris</button>
+                                               <button class="tablinks" onclick="openCity(event, 'key3')">Tokyo</button>
+                                        </div>
 
+                                             <div id="key1" class="tabcontent">
+                                               <h3>London</h3>
+                                               <p>London is the capital city of England.</p>
+                                             </div>
+
+                                             <div id="key2" class="tabcontent">
+                                               <h3>Paris</h3>
+                                               <p>Paris is the capital of France.</p> 
+                                             </div>
+
+                                             <div id="key3" class="tabcontent">
+                                               <h3>Tokyo</h3>
+                                               <p>Tokyo is the capital of Japan.</p>
+                                             </div>
+                                       
+
+                              </div>
                          </div>
                     </div>
-                    <div class="col-md-6 col-sm-6 ">
+
+                    <div class="col-md-6 col-sm-6 " style="margin-top: 20px;">
                          <div class="team-thumb1 wow fadeInUp card" data-wow-delay="0.2s">
-                              <div class="team-info" style="text-align: center; height: 400px;">
+                              <div class="team-info" style="text-align: center;">
                                         <img src="images/mental.jpg" class="service-logo">
                                         <h3>Mental Health</h3>
                                         <p>General Principal</p> 
@@ -199,14 +240,67 @@ http://www.tooplate.com/view/2098-health
                                         <div class="content1">
                                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                         </div> 
-                                        <br>      
+                                        <br>
+                                        <button type="button" class="form-control collaps" ><b>Open Section 1 </b><b style="float: right;">+</b></button>
+                                        <div class="content1">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                        <br>
+                                        <div class="tab">
+                                               <button class="tablinks" onclick="openCity(event, 'mh1')" id="defaultOpen">London</button>
+                                               <button class="tablinks" onclick="openCity(event, 'mh2')">Paris</button>
+                                               <button class="tablinks" onclick="openCity(event, 'mh3')">Tokyo</button>
+                                        </div>
+
+                                             <div id="mh1" class="tabcontent">
+                                               <h3>London</h3>
+                                               <p>London is the capital city of England.</p>
+                                             </div>
+
+                                             <div id="mh2" class="tabcontent">
+                                               <h3>Paris</h3>
+                                               <p>Paris is the capital of France.</p> 
+                                             </div>
+
+                                             <div id="mh3" class="tabcontent">
+                                               <h3>Tokyo</h3>
+                                               <p>Tokyo is the capital of Japan.</p>
+                                             </div>
+
+
+                                        
+                                   </div>      
                               </div>
                          </div>
-                    </div>
+
+                  
 
                     <div class="col-md-6 col-sm-6 " style="margin-top: 20px;">
                          <div class="team-thumb1 wow fadeInUp card" data-wow-delay="0.2s">
-                                   <div class="team-info" style="text-align: center; height: 400px;">
+                                   <div class="team-info" style="text-align: center; ">
+                                        <img src="images/physio1.png" class="service-logo">
+                                        <h3>Physiotherapy</h3>
+                                        <p>General Principal</p> 
+                                        <button type="button" class="form-control collaps" ><b>Open Section 1 </b><b style="float: right;">+</b></button>
+                                        <div class="content1">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div> <br>
+                                        <button type="button" class="form-control collaps" ><b>Open Section 1 </b><b style="float: right;">+</b></button>
+                                        <div class="content1">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                        <br>
+
+                                        
+                                   </div>
+
+                         </div>
+                    </div>
+                    
+                    
+                    <div class="col-md-6 col-sm-6 " style="margin-top: 20px;">
+                         <div class="team-thumb1 wow fadeInUp card" data-wow-delay="0.2s">
+                                   <div class="team-info" style="text-align: center;  ">
                                         <img src="images/massage.jpg" class="service-logo">
                                         <h3>Massage Therapy</h3>
                                         <p>General Principal</p> 
@@ -214,14 +308,20 @@ http://www.tooplate.com/view/2098-health
                                         <div class="content1">
                                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                         </div> 
-                                        <br>      
+                                        <br>
+                                        <button type="button" class="form-control collaps" ><b>Open Section 1 </b><b style="float: right;">+</b></button>
+                                        <div class="content1">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                        <br>
+                                           
                                    </div>
 
                          </div>
                     </div>
                     <div class="col-md-6 col-sm-6 " style="margin-top: 20px;">
                          <div class="team-thumb1 wow fadeInUp card" data-wow-delay="0.2s">
-                              <div class="team-info" style="text-align: center; height: 400px;">
+                              <div class="team-info" style="text-align: center; ">
                                         <img src="images/nurse.jpg" class="service-logo">
                                         <h3>Nurses Protrait</h3>
                                         <p>General Principal</p> 
@@ -229,10 +329,43 @@ http://www.tooplate.com/view/2098-health
                                         <div class="content1">
                                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                         </div> 
-                                        <br>      
+                                        <br> 
+                                        <button type="button" class="form-control collaps" ><b>Open Section 1 </b><b style="float: right;">+</b></button>
+                                        <div class="content1">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                        <br>
+                                       
+
                               </div>
                          </div>
                     </div>
+
+                    <div class="col-md-6 col-sm-6 " style="margin-top: 20px;">
+                         <div class="team-thumb1 wow fadeInUp card" data-wow-delay="0.2s">
+                              <div class="team-info" style="text-align: center; ">
+                                        <img src="images/nurse.jpg" class="service-logo">
+                                        <h3>Nurses Protrait</h3>
+                                        <p>General Principal</p> 
+                                        <button type="button" class="form-control collaps" ><b>Open Section 1 </b><b style="float: right;">+</b></button>
+                                        <div class="content1">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div> 
+                                        <br> 
+                                        <button type="button" class="form-control collaps" ><b>Open Section 1 </b><b style="float: right;">+</b></button>
+                                        <div class="content1">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                        <br>
+                                        
+
+                              </div>
+                         </div>
+                    </div>
+
+                    
+
+               </div>
 
 
                      
@@ -255,11 +388,22 @@ http://www.tooplate.com/view/2098-health
                                
                          </div>
                     </div>
-                     
                     <div class="col-lg-12">
-                         <div  data-flickity style=" background-color: #fff;">
-                         <div class="doctors-card">
-                                   <img src="images/sharmilaraju.jpg" alt="Avatar" class="doctors-logo" >
+                         <div class="main">
+                               <div id="myBtnContainer">
+                                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                                <button class="btn" onclick="filterSelection('doctors')"> Doctor's</button>
+                                <button class="btn" onclick="filterSelection('pyschologists')"> Pyschologists</button>
+                                <button class="btn" onclick="filterSelection('physio')"> Physio</button>
+                                <button class="btn" onclick="filterSelection('nursing')"> Nursing Staff</button>
+                                <button class="btn" onclick="filterSelection('therapeutical')"> Therapeutical</button>
+                              </div>
+
+                              <!-- Portfolio Gallery Grid -->
+                              <div class="row">
+                                <div class="column doctors">
+                                  <div class="content">
+                                    <img src="images/sharmilaraju.jpg" alt="Avatar" class="doctors-logo" >
                                     <div class="doctors-container">
                                         <center><h5>GENERAL PRACTIONIER</h5></center>
                                         <h4><b>Dr. Sharmila Raju -<br>MBBS, DCH, FRACGP</b></h4>
@@ -270,13 +414,14 @@ http://www.tooplate.com/view/2098-health
                                              <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
                                              <li><a href="#" class="fa fa-twitter"></a></li>
                                              <li><a href="#" class="fa fa-instagram"></a></li>
-                                        </ul></center>
-                                        
-                                    </div>                                  
-                         </div>
-                         <div class="doctors-card">
-                                   <img src="images/ckraju.jpg" alt="Avatar" class="doctors-logo" >
-                                    <div class="doctors-container">
+                                        </ul></center>   
+                                    </div>
+                                  </div>
+                                </div>
+                              <div class="column doctors">
+                                  <div class="content">
+                                  <img src="images/ckraju.jpg" alt="Avatar" class="doctors-logo" >
+                                   <div class="doctors-container">
                                         <center><h5>GENERAL PRACTIONIER</h5></center>
                                         <h4><b>D. C K Raju - MBBS</b></h4>
                                         <br>
@@ -290,11 +435,13 @@ http://www.tooplate.com/view/2098-health
                                              <li><a href="#" class="fa fa-instagram"></a></li>
                                         </ul></center>
                                         
-                                    </div>                                  
-                         </div>
-
-                         <div class="doctors-card">
-                                   <img src="images/charmaine.jpg" alt="Avatar" class="doctors-logo" >
+                                   </div>
+                                  </div>
+                              </div>
+                                
+                              <div class="column pyschologists">
+                                  <div class="content">
+                                    <img src="images/charmaine.jpg" alt="Avatar" class="doctors-logo" >
                                     <div class="doctors-container">
                                         <center><h5>CLINICAL PSYCHOLOGIST</h5></center>
                                         <h4><b>Charmaine Skea - BA(Hons) Phys,<br>MA(Clin)</b></h4>
@@ -307,10 +454,12 @@ http://www.tooplate.com/view/2098-health
                                              <li><a href="#" class="fa fa-instagram"></a></li>
                                         </ul></center>
                                         
-                                    </div>                                  
-                         </div> 
+                                    </div>
+                                  </div>
+                              </div>
 
-                         <div class="doctors-card">
+                              <div class="column physio">
+                                  <div class="content">
                                    <img src="images/ankita.jpg" alt="Avatar" class="doctors-logo" >
                                     <div class="doctors-container">
                                         <center><h5>PHYSIOTHERAPIST</h5></center>
@@ -325,11 +474,12 @@ http://www.tooplate.com/view/2098-health
                                              <li><a href="#" class="fa fa-instagram"></a></li>
                                         </ul></center>
                                         
-                                    </div>                                  
-                         </div>
-
-                         <div class="doctors-card">
-                                   <img src="images/hannah.jpg" alt="Avatar" class="doctors-logo" >
+                                    </div>  
+                                  </div>
+                              </div>
+                              <div class="column physio">
+                                  <div class="content">
+                                  <img src="images/hannah.jpg" alt="Avatar" class="doctors-logo" >
                                     <div class="doctors-container">
                                         <center><h5>EXERCISE PHYSIOLOGIST</h5></center>
                                         <h4><b>Hannah Gibson</b></h4>
@@ -344,11 +494,33 @@ http://www.tooplate.com/view/2098-health
                                              <li><a href="#" class="fa fa-instagram"></a></li>
                                         </ul></center>
                                         
-                                    </div>                                  
-                         </div>
-
-                         <div class="doctors-card">
-                                   <img src="images/gaye.JPEG" alt="Avatar" class="doctors-logo" >
+                                    </div>
+                                  </div>
+                              </div>
+                                
+                              <div class="column nursing">
+                                  <div class="content">
+                                    <img src="images/emma.jpg" alt="Avatar" class="doctors-logo" >
+                                    <div class="doctors-container">
+                                        <center><h5>REGISTERED NURSE</h5></center>
+                                        <h4><b>Emma Ashton</b></h4>
+                                        <br>
+                                        <p><i class="fa fa-phone"></i> (02)94513722</p>
+                                        <p><i class="fa fa-envelope-o"></i> <a href="#">nurse@freanchsforestdoctors.com.au</a></p>
+                                        <p>Emma is Available first Wednesday and thursday.</p>
+                                        <br>
+                                        <center><ul class="social-icon">
+                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                             <li><a href="#" class="fa fa-twitter"></a></li>
+                                             <li><a href="#" class="fa fa-instagram"></a></li>
+                                        </ul></center>
+                                        
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="column nursing">
+                                  <div class="content">
+                                    <img src="images/gaye.JPEG" alt="Avatar" class="doctors-logo" >
                                     <div class="doctors-container">
                                         <center><h5>REGISTERED NURSE</h5></center>
                                         <h4><b>Gaye Thompson</b></h4>
@@ -363,9 +535,12 @@ http://www.tooplate.com/view/2098-health
                                              <li><a href="#" class="fa fa-instagram"></a></li>
                                         </ul></center>
                                         
-                                    </div>                                  
-                         </div>
-                         <div class="doctors-card">
+                                    </div>
+                                  </div>
+                              </div>
+
+                              <div class="column therapeutical">
+                                  <div class="content">
                                    <img src="images/taka.jpg" alt="Avatar" class="doctors-logo" >
                                     <div class="doctors-container">
                                         <center><h5>MASSAGE THERAPIST</h5></center>
@@ -380,10 +555,17 @@ http://www.tooplate.com/view/2098-health
                                              <li><a href="#" class="fa fa-instagram"></a></li>
                                         </ul></center>
                                         
-                                    </div>                                  
-                         </div>
-                         </div>
+                                    </div> 
+                                  </div>
+                              </div>
+                              <!-- END GRID -->
+                              </div>
+
+                              <!-- END MAIN -->
+                              </div>
                     </div>
+                     
+                    
                     
                    
                </div>
@@ -576,7 +758,7 @@ http://www.tooplate.com/view/2098-health
             3. Click "Share" and choose "Embed map" tab
             4. Copy only URL and paste it within the src="" field below
 	-->
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1944.013915274594!2d77.53078177030284!3d12.970070954360347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1584888354110!5m2!1sen!2sin" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.3779804498295!2d151.24122021491874!3d-33.750897220379954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12aa19be8081f7%3A0x216aea15398c47c3!2s24%20Frenchs%20Forest%20Rd%20E%2C%20Frenchs%20Forest%20NSW%202086%2C%20Australia!5e0!3m2!1sen!2sin!4v1585027039402!5m2!1sen!2sin" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
      </section>           
 
 
@@ -587,12 +769,12 @@ http://www.tooplate.com/view/2098-health
 
                     <div class="col-md-4 col-sm-4">
                          <div class="footer-thumb"> 
-                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
-                              <p>Fusce at libero iaculis, venenatis augue quis, pharetra lorem. Curabitur ut dolor eu elit consequat ultricies.</p>
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Our Address</h4>
+                              <p>24 French Forest Road East<br>French Forest<br>New South Wales-2086.</p>
 
                               <div class="contact-info">
-                                   <p><i class="fa fa-phone"></i> 010-070-0170</p>
-                                   <p><i class="fa fa-envelope-o"></i> <a href="#">yuta@company.com</a></p>
+                                   <p><i class="fa fa-phone"></i> (02)94513722</p>
+                                   <p><i class="fa fa-envelope-o"></i> <a href="#">info@frenchforestdoctors.com.au</a></p>
                               </div>
                          </div>
                     </div>
@@ -626,9 +808,9 @@ http://www.tooplate.com/view/2098-health
                          <div class="footer-thumb">
                               <div class="opening-hours">
                                    <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
-                                   <p>Monday - Friday <span>08:00  - 18:00 </span></p>
-                                   <p>Saturday <span>09:00   - 17:00 </span></p>
-                                   <p>Sunday <span>09:00   - 15:00 </span></p>
+                                   <p>Monday - Friday <span>08:00  - 19:00 </span></p>
+                                   <p>Saturday <span>09:00   - 16:00 </span></p>
+                                   <p>Sunday <span>21:00   - 13:00 </span></p>
                               </div> 
 
                               <ul class="social-icon">
@@ -642,9 +824,9 @@ http://www.tooplate.com/view/2098-health
                     <div class="col-md-12 col-sm-12 border-top">
                          <div class="col-md-4 col-sm-6">
                               <div class="copyright-text"> 
-                                   <p>Copyright &copy; 2018 Your Company 
+                                   <p>Copyright &copy; 2020  French Forest Doctors 
                                    
-                                   | Design: Tooplate</p>
+                                   | All rights reserved.</p>
                               </div>
                          </div>
                          <div class="col-md-6 col-sm-6">
@@ -693,6 +875,71 @@ http://www.tooplate.com/view/2098-health
               }
             });
           }
+
+          //Services tab 
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
+
+
+          // doctors image tabs
+          filterSelection("all")
+          function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+              w3RemoveClass(x[i], "show");
+              if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+          }
+
+          function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+              if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+            }
+          }
+
+          function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+              while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);     
+              }
+            }
+            element.className = arr1.join(" ");
+          }
+
+
+          // Add active class to the current button (highlight it)
+          var btnContainer = document.getElementById("myBtnContainer");
+          var btns = btnContainer.getElementsByClassName("btn");
+          for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function(){
+              var current = document.getElementsByClassName("active");
+              current[0].className = current[0].className.replace(" active", "");
+              this.className += " active";
+            });
+          }
+
      </script>
 
      <!-- SCRIPTS -->
