@@ -419,7 +419,7 @@ http://www.tooplate.com/view/2098-health
 
   .slider .container {
     width: 100%;
-    margin-top:6px;
+    margin-top:-20px;
   }
 
   .slider .owl-dots {
@@ -1207,10 +1207,10 @@ http://www.tooplate.com/view/2098-health
 }
  
 .doctors-logo{  
-  width: 303px;
-  height: 320px;
+  width: 100%;
   border: 1px solid #ddd; /* Gray border */
   border-radius: 4px;
+  height: 400px;
 }
 .doctors-container
 {
@@ -1218,6 +1218,7 @@ http://www.tooplate.com/view/2098-health
   padding-left: 5px;
   text-align: justify;
   padding-right: 5px;
+  width: 100%
 
 }
 .doctors-contact{
@@ -1236,7 +1237,7 @@ http://www.tooplate.com/view/2098-health
   float: left;
   border: 1px solid #1dd2b0;
   background-color: #f1f1f1;
-  width: 30%;
+  width: 33%;
   height: 250px;
 }
 
@@ -1270,20 +1271,20 @@ http://www.tooplate.com/view/2098-health
   float: left;
   padding: 0px 12px;
   border: 1px solid #1dd2b0;
-  width: 70%;
+  width: 66%;
   border-left: none;
   height: 250px;
 }
 
 
 /*Doctors tabs*/
-.row {
+.row1 {
   margin: 10px -16px;
 }
 
 /* Add padding BETWEEN each column */
-.row,
-.row > .column {
+.row1,
+.row1 > .column {
   padding: 8px;
   
 }
@@ -1291,12 +1292,12 @@ http://www.tooplate.com/view/2098-health
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33.33%;
+  width: 100%;
   display: none; /* Hide all elements by default */
 }
 
 /* Clear floats after rows */ 
-.row:after {
+.row1:after {
   content: "";
   display: table;
   clear: both;
@@ -1307,11 +1308,7 @@ http://www.tooplate.com/view/2098-health
   background-color: white;
   padding: 10px;
 }
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
+ 
 
 /* The "show" class is added to the filtered elements */
 .show {
