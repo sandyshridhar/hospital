@@ -66,6 +66,88 @@
 .doctors-contact{
   margin-left:  33.5%;
 }
+
+ button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    padding: 16px 32px;
+    background-color:  #1dd2b0;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    transition: color 0.6s ease-out, box-shadow 0.3s ease 0.2s;
+    font-family: verdana;
+ }
+ button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2196f3;
+    clip-path: circle(0 at 0% 100%);
+    transition: clip-path 0.8s ease-out;
+    z-index: -1;
+ }
+ button::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2196f3;
+    clip-path: circle(0 at 100% 0%);
+    transition: clip-path 0.8s ease-out;
+    z-index: -1;
+ }
+ button:hover{
+    color: #282726;
+   
+ }
+ button:hover::before{
+    clip-path: circle(200px at 0% 100%);
+ }
+ button:hover::after{
+    clip-path: circle(200px at 100% 0%);
+ }
+/*2nd button*/
+
+  button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 16px 32px;
+    background-color: tomato;
+    color: white;
+    font-family: verdana;
+    font-size: 15px;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+ }
+ button::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -110%;
+    bottom: 0;
+    width: 50%;
+    background-color: rgba(255,255,255,0.2);
+    transform: skewX(-30deg);
+    transition: left 0.7s ease-in-out;
+ }
+ button:hover::before{
+    left: 120%;
+ }
+ 
+
      </style>
 </head>
     
@@ -105,6 +187,9 @@
                         </div>
                       
                         </div>   
-                    
+
+
+ <button>Hover ME</button>   
+                     <button>Hover ME</button>   
  </body>
  </html>

@@ -7,71 +7,41 @@
  	 
 <style type="text/css">
 
-/* Center website */
- 
-
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
-.row {
-  margin: 10px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-  background-color: #e4dfd770;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  display: none; /* Hide all elements by default */
-}
-
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
+*{
+	box-sizing: border-box;
 }
 /* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-.btn {
-  border: 2px solid #1dd2b0;
-  border-radius: 10px;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-  color: black;
-}
-
-.btn:hover {
-  background-color: #4267b2;
-}
-
+ button{
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%,-50%);
+ 	padding: 16px 32px;
+ 	background-color: tomato;
+ 	color: white;
+ 	font-family: verdana;
+ 	font-size: 15px;
+ 	border: none;
+ 	overflow: hidden;
+ 	cursor: pointer;
+ }
+ button::before{
+ 	position: absolute;
+ 	content: "";
+ 	top: 0;
+ 	left: -110%;
+ 	bottom: 0;
+ 	width: 50%;
+ 	background-color: rgba(255,255,255,0.2);
+ 	transform: skewX(-30deg);
+ 	transition: left 0.7s ease-in-out;
+ }
+ button:hover::before{
+ 	left: 120%;
+ }
  
+
+  
 </style>
 <script>
 filterSelection("all")
@@ -123,221 +93,18 @@ for (var i = 0; i < btns.length; i++) {
  <body>
  
  
- <!-- MAIN (Center website) -->
-<div class="main">
- <div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-  <button class="btn" onclick="filterSelection('people')"> People</button>
-</div>
-
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column nature">
-    <div class="content">
-      <img src="images/app.jpg" alt="Mountains" style="width:100%">
-      <h4>MountainsMountai</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column nature">
-    <div class="content">
-    <img src="images/app.jpg" alt="Lights" style="width:100%">
-      <h4>Lights</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column nature">
-    <div class="content">
-    <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
-      <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  
-  <div class="column cars">
-    <div class="content">
-      <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
-      <h4>Retro</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-    <img src="images/app.jpg" alt="Car" style="width:100%">
-      <h4>Fast</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-    <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
-      <h4>Classic</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-
-  <div class="column people">
-    <div class="content">
-      <img src="/w3images/people1.jpg" alt="Car" style="width:100%">
-      <h4>Girl</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column people">
-    <div class="content">
-    <img src="/w3images/people2.jpg" alt="Car" style="width:100%">
-      <h4>Man</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column people">
-    <div class="content">
-    <img src="/w3images/people3.jpg" alt="Car" style="width:100%">
-      <h4>Woman</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-<!-- END GRID -->
-</div>
-
-<!-- END MAIN -->
-</div>
+ 
  
 
+<div class="container">
+	<img src="images/app.jpg" class="image">
+	<div class="overlay">my name is</div>
+	
+</div>
 
 
- <div class="col-sm-6">
-                              <div class="column pyschologists">
-                                  <div class="content">
-                                    <img src="images/charmaine.jpg" alt="Avatar" class="doctors-logo" >
-                                    <div class="doctors-container">
-                                        <center><h5>CLINICAL PSYCHOLOGIST</h5></center>
-                                        <h4><b>Charmaine Skea - BA(Hons) Phys,<br>MA(Clin)</b></h4>
-                                        <p><i class="fa fa-phone"></i> (02)94513722</p>
-                                        <p><i class="fa fa-envelope-o"></i> <a href="#">cske@freanchsforestdoctors.com.au</a></p>
-                                        <p>Charmaine is Available on Wednesdays and Saturday.</p>
-                                        <center><ul class="social-icon">
-                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
-                                             <li><a href="#" class="fa fa-twitter"></a></li>
-                                             <li><a href="#" class="fa fa-instagram"></a></li>
-                                        </ul></center>
-                                        
-                                    </div>
-                                  </div>
-                              </div>
-                              </div>
+  <button>Hover ME</button>
 
-                              <div class="col-sm-6">
-                              <div class="column physio">
-                                  <div class="content">
-                                   <img src="images/ankita.jpg" alt="Avatar" class="doctors-logo" >
-                                    <div class="doctors-container">
-                                        <center><h5>PHYSIOTHERAPIST</h5></center>
-                                        <h4><b>ANKITA SURPAL</b></h4>
-                                        <br>
-                                        <p><i class="fa fa-phone"></i> (02)94513722</p>
-                                        <p><i class="fa fa-envelope-o"></i> <a href="#">cske@freanchsforestdoctors.com.au</a></p>
-                                        <p>Ankita is Available first Sunday of the month.</p>
-                                        <center><ul class="social-icon">
-                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
-                                             <li><a href="#" class="fa fa-twitter"></a></li>
-                                             <li><a href="#" class="fa fa-instagram"></a></li>
-                                        </ul></center>
-                                        
-                                    </div>  
-                                  </div>
-                              </div>
-                              </div>
-
-                              <div class="col-sm-6">
-                              <div class="column physio">
-                                  <div class="content">
-                                  <img src="images/hannah.jpg" alt="Avatar" class="doctors-logo" >
-                                    <div class="doctors-container">
-                                        <center><h5>EXERCISE PHYSIOLOGIST</h5></center>
-                                        <h4><b>Hannah Gibson</b></h4>
-                                        <br>
-                                        <p><i class="fa fa-phone"></i> (02)94513722</p>
-                                        <p><i class="fa fa-envelope-o"></i> <a href="#">cske@freanchsforestdoctors.com.au</a></p>
-                                        <p>Hannah is Available Tuesday and Friday.</p>
-                                        <br>
-                                        <center><ul class="social-icon">
-                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
-                                             <li><a href="#" class="fa fa-twitter"></a></li>
-                                             <li><a href="#" class="fa fa-instagram"></a></li>
-                                        </ul></center>
-                                        
-                                    </div>
-                                  </div>
-                              </div>
-                              </div>
-
-                              <div class="col-sm-6">  
-                              <div class="column nursing">
-                                  <div class="content">
-                                    <img src="images/emma.jpg" alt="Avatar" class="doctors-logo" >
-                                    <div class="doctors-container">
-                                        <center><h5>REGISTERED NURSE</h5></center>
-                                        <h4><b>Emma Ashton</b></h4>
-                                        <br>
-                                        <p><i class="fa fa-phone"></i> (02)94513722</p>
-                                        <p><i class="fa fa-envelope-o"></i> <a href="#">nurse@freanchsforestdoctors.com.au</a></p>
-                                        <p>Emma is Available first Wednesday and thursday.</p>
-                                        <br>
-                                        <center><ul class="social-icon">
-                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
-                                             <li><a href="#" class="fa fa-twitter"></a></li>
-                                             <li><a href="#" class="fa fa-instagram"></a></li>
-                                        </ul></center>
-                                        
-                                    </div>
-                                  </div>
-                              </div>
-                              </div>
-
-                              <div class="column nursing">
-                                  <div class="content">
-                                    <img src="images/gaye.JPEG" alt="Avatar" class="doctors-logo" >
-                                    <div class="doctors-container">
-                                        <center><h5>REGISTERED NURSE</h5></center>
-                                        <h4><b>Gaye Thompson</b></h4>
-                                        <br>
-                                        <p><i class="fa fa-phone"></i> (02)94513722</p>
-                                        <p><i class="fa fa-envelope-o"></i> <a href="#">practice@freanchsforestdoctors.com.au</a></p>
-                                        <p>Gaye is Available first Monday and Tuesday.</p>
-                                        <br>
-                                        <center><ul class="social-icon">
-                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
-                                             <li><a href="#" class="fa fa-twitter"></a></li>
-                                             <li><a href="#" class="fa fa-instagram"></a></li>
-                                        </ul></center>
-                                        
-                                    </div>
-                                  </div>
-                              </div>
-
-                              <div class="column therapeutical">
-                                  <div class="content">
-                                   <img src="images/taka.jpg" alt="Avatar" class="doctors-logo" >
-                                    <div class="doctors-container">
-                                        <center><h5>MASSAGE THERAPIST</h5></center>
-                                        <h4><b>Taka Nakamura</b></h4>
-                                         
-                                        <p><i class="fa fa-phone"></i> (02)94513722</p>
-                                        <p><i class="fa fa-envelope-o"></i> <a href="#">practice@freanchsforestdoctors.com.au</a></p>
-                                        <p>Taka is our in-house Massage Therapist who is a member of the Association Massage Therapy.</p>
-                                        <center><ul class="social-icon">
-                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
-                                             <li><a href="#" class="fa fa-twitter"></a></li>
-                                             <li><a href="#" class="fa fa-instagram"></a></li>
-                                        </ul></center>
-                                        
-                                    </div> 
-                                  </div>
-                              </div>
-                              
 
  </body>
  </html>
