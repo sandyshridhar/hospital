@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>FFD's</title>
+<!--
+
+Template 2098 Health
+
+http://www.tooplate.com/view/2098-health
+
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/tooplate-style.css">
+     <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+
+     <link rel="stylesheet" type="text/css" href="js/custom.js">
+     <link rel="stylesheet" type="text/css" href="js/bootstrap.min.js">
+
+
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ 
+     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+     <!------ Include the above in your HEAD tag ---------->
+
+      
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    
+
+      
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- HEADER -->
+     <header>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-6">
+                         <span class="map-icon"><i class="fa fa-map-marker" aria-hidden="true" style="padding-top: 12px;color: #747474;"></i> 24 French Forest Road East French Forest New South Wales-2086.</span>
+                         
+                    </div>
+                         
+                    <div class="col-md-8 col-sm-6 ">
+                         <div class="col-md-2 col-sm-2 ">
+                              <span class="phone-icon"><i class="fa fa-phone"></i> (02)94513722</span>
+                         </div>
+                         <div class="col-md-4 col-sm-1 ">
+
+                               <span class="email-icon"  ><i class="fa fa-envelope-o"></i> <a href="#">info@frenchforestdoctors.com.au</a></span>
+                         </div>
+                         <div class="col-md-2 col-sm-3 " style="width: 50%;">
+                                                           <span class="date-icon" ><i class="fa fa-calendar-plus-o"></i> 08:00 - 19:00 (Mon-Fri)<br>
+                                                                                       09:00 - 16:00 (Sat)<br>
+                                                                                       21:00 - 13:00 (Sun)   </span>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </header>
+
+ 
+
+     <!-- MENU -->
+     
+
+     <section class="navbar navbar-default navbar-static-top" role="navigation" >
+          <div class="container-fluid">
+
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+
+
+                    <!-- lOGO TEXT HERE -->
+                    <img src="images/logo.jpg" style="margin-top: 2px;margin-left: -7px;">
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right" >
+                         <li><a href="#top" class="smoothScroll">Home</a></li>
+                         <li><a href="#services" class="smoothScroll">Services</a></li>
+                         <li><a href="#team" class="smoothScroll">Doctors</a></li>
+                         <!-- <li><a href="#news" class="smoothScroll">News</a></li> -->
+                         <li><a href="#google-map" class="smoothScroll">Contact</a></li>
+                         <li class="appointment-btn"><a href="#appointment">Make an appointment</a></li>
+                    </ul>
+               </div>
+                
+          </div>
+          <div class="head" style="position: fixed;">
+               <div class="progress-container">
+                    <div class="progress-bar" id="myBar">
+                    </div>
+               </div>
+          </div> 
+     </section>
+     
+           
+    
+  
+          <div class="container">
+               <div class="row">
+                    <div class="col-lg-12">
+                         <div class="title-box">
+                              <h2>Doctors</h2>                              
+                         </div>
+                    </div>
+                    <div class="col-sm-12">
+                         <div >
+                              <div id="myBtnContainer">
+                                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                                <button class="btn" onclick="filterSelection('doctors')"> Doctor's</button>
+                                <button class="btn" onclick="filterSelection('pyschologists')"> Pyschologists</button>
+                                <button class="btn" onclick="filterSelection('physio')"> Physio</button>
+                                <button class="btn" onclick="filterSelection('nursing')"> Nursing Staff</button>
+                                <button class="btn" onclick="filterSelection('therapeutical')"> Therapeutical</button>
+                              </div>
+
+                              <!-- Portfolio Gallery Grid -->
+                              <div class="row1">
+                                   <div class="col-sm-6">
+                                        <div class="column doctors">
+                                             <div class="content">
+                                             <img src="images/sharmilaraju.jpg" alt="Avatar" class="doctors-logo" >
+                                             <div>
+                                                  <center><h5>GENERAL PRACTIONIER</h5></center>
+                                                  <h4><b>Dr. Sharmila Raju -<br>MBBS, DCH, FRACGP</b></h4>
+                                                  <p><i class="fa fa-phone"></i> (02)94513722</p>
+                                                  <p><i class="fa fa-envelope-o"></i> <a href="#">practice@frenchsforestdoctors.com.au</a></p>
+                                                  <p>Dr Sharmila Raju is Available Monday through Saturday.</p>
+                                                  <center><ul class="social-icon">
+                                                       <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                                       <li><a href="#" class="fa fa-twitter"></a></li>
+                                                       <li><a href="#" class="fa fa-instagram"></a></li>
+                                                  </ul></center>   
+                                             </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              
+                              <div class="col-sm-6">
+                              <div class="column doctors">
+                                  <div class="content">
+                                  <img src="images/ckraju.jpg" alt="Avatar" class="doctors-logo" >
+                                   <div class="doctors-container">
+                                        <center><h5>GENERAL PRACTIONIER</h5></center>
+                                        <h4><b>D. C K Raju - MBBS</b></h4>
+                                        <br>
+                                        <p><i class="fa fa-phone"></i> (02)94513722</p>
+                                        <p><i class="fa fa-envelope-o"></i> <a href="#">practice@frenchsforestdoctors.com.au</a></p>
+                                        <p>Dr C K Raju is Available 7 days week.</p>
+                                         <br>
+                                        <center><ul class="social-icon">
+                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                             <li><a href="#" class="fa fa-twitter"></a></li>
+                                             <li><a href="#" class="fa fa-instagram"></a></li>
+                                        </ul></center>     
+                                   </div>
+                                  </div>
+                              </div>
+                              </div> 
+
+
+                              <div class="col-sm-12">
+                              <div class="col-sm-6" style=" padding-top: 10px;">
+                              <div class="column pyschologists">
+                                  <div class="content" style="margin-left: -14px;">
+                                    <img src="images/charmaine.jpg" alt="Avatar" class="doctors-logo" >
+                                    <div class="doctors-container">
+                                        <center><h5>CLINICAL PSYCHOLOGIST</h5></center>
+                                        <h4><b>Charmaine Skea - BA(Hons) Phys,<br>MA(Clin)</b></h4>
+                                        <p><i class="fa fa-phone"></i> (02)94513722</p>
+                                        <p><i class="fa fa-envelope-o"></i> <a href="#">cske@freanchsforestdoctors.com.au</a></p>
+                                        <p>Charmaine is Available on Wednesdays and Saturday.</p>
+                                        <center><ul class="social-icon">
+                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                             <li><a href="#" class="fa fa-twitter"></a></li>
+                                             <li><a href="#" class="fa fa-instagram"></a></li>
+                                        </ul></center>    
+                                    </div>
+                                  </div>
+                              </div>
+                              </div>
+                              <div class="col-sm-6">
+                                   
+                              </div>
+                              </div>
+
+                            
+                              <div class="col-sm-6" style=" padding-top: 10px;">
+                              <div class="column physio">
+                                  <div class="content">
+                                   <img src="images/ankita.jpg" alt="Avatar" class="doctors-logo" >
+                                    <div class="doctors-container">
+                                        <center><h5>PHYSIOTHERAPIST</h5></center>
+                                        <h4><b>ANKITA SURPAL</b></h4>
+                                        <br>
+                                        <p><i class="fa fa-phone"></i> (02)94513722</p>
+                                        <p><i class="fa fa-envelope-o"></i> <a href="#">cske@freanchsforestdoctors.com.au</a></p>
+                                        <p>Ankita is Available first Sunday of the month.</p>
+                                        <br>
+                                        <center><ul class="social-icon">
+                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                             <li><a href="#" class="fa fa-twitter"></a></li>
+                                             <li><a href="#" class="fa fa-instagram"></a></li>
+                                        </ul></center>
+                                        
+                                    </div>  
+                                  </div>
+                              </div>
+                              </div>
+
+
+                              <div class="col-sm-6" style="padding-top: 10px;">
+                              <div class="column physio">
+                                  <div class="content">
+                                  <img src="images/hannah.jpg" alt="Avatar" class="doctors-logo" >
+                                    <div class="doctors-container">
+                                        <center><h5>EXERCISE PHYSIOLOGIST</h5></center>
+                                        <h4><b>Hannah Gibson</b></h4>
+                                        <br>
+                                        <p><i class="fa fa-phone"></i> (02)94513722</p>
+                                        <p><i class="fa fa-envelope-o"></i> <a href="#">cske@freanchsforestdoctors.com.au</a></p>
+                                        <p>Hannah is Available Tuesday and Friday.</p>
+                                        <br>
+                                        <center><ul class="social-icon">
+                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                             <li><a href="#" class="fa fa-twitter"></a></li>
+                                             <li><a href="#" class="fa fa-instagram"></a></li>
+                                        </ul></center>
+                                        
+                                    </div>
+                                  </div>
+                              </div>
+                              </div>
+
+
+                              <div class="col-sm-6" style="padding-top: 10px;">  
+                              <div class="column nursing">
+                                  <div class="content">
+                                    <img src="images/emma.jpg" alt="Avatar" class="doctors-logo" >
+                                    <div class="doctors-container">
+                                        <center><h5>REGISTERED NURSE</h5></center>
+                                        <h4><b>Emma Ashton</b></h4>
+                                        <br>
+                                        <p><i class="fa fa-phone"></i> (02)94513722</p>
+                                        <p><i class="fa fa-envelope-o"></i> <a href="#">nurse@freanchsforestdoctors.com.au</a></p>
+                                        <p>Emma is Available first Wednesday and thursday.</p>
+                                        <br>
+                                        <center><ul class="social-icon">
+                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                             <li><a href="#" class="fa fa-twitter"></a></li>
+                                             <li><a href="#" class="fa fa-instagram"></a></li>
+                                        </ul></center>
+                                        
+                                    </div>
+                                  </div>
+                              </div>
+                              </div>
+
+
+                              <div class="col-sm-6">
+                               <div class="column nursing" style="padding-top: 10px;">
+                                  <div class="content">
+                                    <img src="images/gaye1.png" alt="Avatar" class="doctors-logo" >
+                                    <div class="doctors-container">
+                                        <center><h5>REGISTERED NURSE</h5></center>
+                                        <h4><b>Gaye Thompson</b></h4>
+                                        <br>
+                                        <p><i class="fa fa-phone"></i> (02)94513722</p>
+                                        <p><i class="fa fa-envelope-o"></i> <a href="#">practice@freanchsforestdoctors.com.au</a></p>
+                                        <p>Gaye is Available first Monday and Tuesday.</p>
+                                        <br>
+                                        <center><ul class="social-icon">
+                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                             <li><a href="#" class="fa fa-twitter"></a></li>
+                                             <li><a href="#" class="fa fa-instagram"></a></li>
+                                        </ul></center>
+                                        
+                                    </div>
+                                  </div>
+                              </div>
+                              </div>
+
+
+                              <div class="col-sm-6">
+                              <div class="column therapeutical" style="padding-top: 10px;">
+                                  <div class="content">
+                                   <img src="images/taka.jpg" alt="Avatar" class="doctors-logo" >
+                                    <div class="doctors-container">
+                                        <center><h5>MASSAGE THERAPIST</h5></center>
+                                        <h4><b>Taka Nakamura</b></h4>
+                                         <br>
+                                        <p><i class="fa fa-phone"></i> (02)94513722</p>
+                                        <p><i class="fa fa-envelope-o"></i> <a href="#">practice@freanchsforestdoctors.com.au</a></p>
+                                        <p>Taka is our in-house Massage Therapist who is a member of the Association Massage Therapy.</p>
+                                        <center><ul class="social-icon">
+                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                             <li><a href="#" class="fa fa-twitter"></a></li>
+                                             <li><a href="#" class="fa fa-instagram"></a></li>
+                                        </ul></center>
+                                        
+                                    </div> 
+                                  </div>
+                              </div>
+                              </div>
+                                                          
+                              <!-- END GRID -->
+                              </div>
+
+                              <!-- END MAIN -->
+                              </div>
+                    </div>     
+                   
+               </div>
+          </div>            
+
+     <!-- End Services -->
+     </section>
+
+     <div class="container">
+     <div class="row">
+          <div class="col-sm-12">
+               <h2>Doctors's</h2>
+          </div>
+          <h3>Doctor's</h3>
+          <div class="col-sm-6">
+               <div class="content">
+               <div class="overlay-titel">
+                    <img src="images/sharmilaraju.jpg" alt="Avatar" class="overlay-image" style=" border:1px solid black;">
+                    <div class="overlay"><h4><b>Dr. Sharmila Raju -<br>MBBS, DCH, FRACGP</b></h4>
+                    </div>
+               </div>
+               <center><h5>GENERAL PRACTIONIER</h5></center>
+               <p><i class="fa fa-phone"></i> (02)94513722</p>
+               <p><i class="fa fa-envelope-o"></i> <a href="#">practice@frenchsforestdoctors.com.au</a></p>
+               <p>Dr Sharmila Raju is Available Monday through Saturday.</p>
+               <center>
+                         <ul class="social-icon">
+                         <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                         <li><a href="#" class="fa fa-twitter"></a></li>
+                         <li><a href="#" class="fa fa-instagram"></a></li>
+                         </ul>
+               </center>   
+               
+               
+          </div>   
+          </div>
+
+          <div class="col-sm-6">
+                             
+               <div class="content">
+                    <div class="overlay-titel">
+                         <img src="images/ckraju.jpg" alt="Avatar" class="doctors-logo" style=" border:1px solid black;">
+                          <div class="overlay"><h4><b>D. C K Raju - MBBS</b></h4></div>
+                    </div>
+                    <center><h5>GENERAL PRACTIONIER</h5></center>
+                                        
+                                        <p><i class="fa fa-phone"></i> (02)94513722</p>
+                                        <p><i class="fa fa-envelope-o"></i> <a href="#">practice@frenchsforestdoctors.com.au</a></p>
+                                        <p>Dr C K Raju is Available 7 days week.</p>
+                                       
+                                        <center><ul class="social-icon">
+                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                             <li><a href="#" class="fa fa-twitter"></a></li>
+                                             <li><a href="#" class="fa fa-instagram"></a></li>
+                                        </ul></center>  
+               </div>
+          </div>
+
+
+           <div class="col-sm-12">    
+
+          <h3>Pyschologists</h3>
+          <div class="col-sm-6">
+                             
+               <div class="content">
+                    <div class="overlay-titel">
+                        <img src="images/charmaine.jpg" alt="Avatar" class="doctors-logo" style=" border:1px solid black;">
+                          <div class="overlay"><h4><b>Charmaine Skea - BA(Hons) Phys,<br>MA(Clin)</b></h4></div>
+                    </div>
+                    <center><h5>CLINICAL PSYCHOLOGIST</h5></center>                                     
+                                         <p><i class="fa fa-phone"></i> (02)94513722</p>
+                                        <p><i class="fa fa-envelope-o"></i> <a href="#">cske@freanchsforestdoctors.com.au</a></p>
+                                        <p>Charmaine is Available on Wednesdays and Saturday.</p>
+                                        <center><ul class="social-icon">
+                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                             <li><a href="#" class="fa fa-twitter"></a></li>
+                                             <li><a href="#" class="fa fa-instagram"></a></li>
+                                        </ul></center>
+               </div>
+          </div>
+          <div class="col-sm-6">   
+          </div>
+          </div>
+     
+
+          <h3>Physio</h3>
+          <div class="col-sm-6">
+                             
+               <div class="content">
+                    <div class="overlay-titel"> 
+                          <img src="images/ankita.jpg" alt="Avatar" class="doctors-logo"style=" border:1px solid black;" >
+                          <div class="overlay"><h4><b>ANKITA SURPAL</b></h4></div>
+                    </div>
+                    <center> <center><h5>PHYSIOTHERAPIST</h5></center></center>                                     
+                                        <p><i class="fa fa-phone"></i> (02)94513722</p>
+                                        <p><i class="fa fa-envelope-o"></i> <a href="#">cske@freanchsforestdoctors.com.au</a></p>
+                                        <p>Ankita is Available first Sunday of the month.</p>
+                                        
+                                        <center><ul class="social-icon">
+                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                             <li><a href="#" class="fa fa-twitter"></a></li>
+                                             <li><a href="#" class="fa fa-instagram"></a></li>
+                                        </ul></center>
+               </div>
+          </div>
+
+          <div class="col-sm-6">
+                             
+               <div class="content">
+                    <div class="overlay-titel"> 
+                          <img src="images/hannah.jpg" alt="Avatar" class="doctors-logo" style=" border:1px solid black;">
+                          <div class="overlay"><h4><b>Hannah Gibson</b></h4></div>
+                    </div>
+                   <center><h5>EXERCISE PHYSIOLOGIST</h5></center>                                    
+                                       <p><i class="fa fa-phone"></i> (02)94513722</p>
+                                        <p><i class="fa fa-envelope-o"></i> <a href="#">cske@freanchsforestdoctors.com.au</a></p>
+                                        <p>Hannah is Available Tuesday and Friday.</p>
+                                        <center><ul class="social-icon">
+                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                             <li><a href="#" class="fa fa-twitter"></a></li>
+                                             <li><a href="#" class="fa fa-instagram"></a></li>
+                                        </ul></center>
+               </div>
+          </div>
+
+           
+ 
+          <h3>Nursing Staff</h3>
+           <div class="col-sm-6">
+                             
+               <div class="content">
+                    <div class="overlay-titel"> 
+                          <img src="images/emma.jpg" alt="Avatar" class="doctors-logo"  style=" border:1px solid black;">
+                          <div class="overlay"> <h4><b>Emma Ashton</b></h4></div>
+                    </div>
+                   <center><h5>REGISTERED NURSE</h5></center>                                   
+                                        <p><i class="fa fa-phone"></i> (02)94513722</p>
+                                        <p><i class="fa fa-envelope-o"></i> <a href="#">nurse@freanchsforestdoctors.com.au</a></p>
+                                        <p>Emma is Available first Wednesday and thursday.</p>
+                                         
+                                        <center><ul class="social-icon">
+                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                             <li><a href="#" class="fa fa-twitter"></a></li>
+                                             <li><a href="#" class="fa fa-instagram"></a></li>
+                                        </ul></center>
+               </div>
+          </div>
+          <div class="col-sm-6">
+                             
+               <div class="content">
+                    <div class="overlay-titel"> 
+                          <img src="images/gaye1.png" alt="Avatar" class="doctors-logo"  style=" border:1px solid black;">
+                          <div class="overlay">  <h4><b>Gaye Thompson</b></h4></div>
+                    </div>
+                  <center><h5>REGISTERED NURSE</h5></center>                                  
+                                        <p><i class="fa fa-phone"></i> (02)94513722</p>
+                                        <p><i class="fa fa-envelope-o"></i> <a href="#">practice@freanchsforestdoctors.com.au</a></p>
+                                        <p>Gaye is Available first Monday and Tuesday.</p>
+                                       
+                                        <center><ul class="social-icon">
+                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                             <li><a href="#" class="fa fa-twitter"></a></li>
+                              
+
+                                             <li><a href="#" class="fa fa-instagram"></a></li>
+                                        </ul></center>
+               </div>
+          </div>
+        
+     
+          <h3>Therapeutical</h3>
+           <div class="col-sm-6">
+                             
+               <div class="content">
+                    <div class="overlay-titel"> 
+                          <img src="images/taka.jpg" alt="Avatar" class="doctors-logo" style=" border:1px solid black;" >
+                          <div class="overlay"> <h4><b>Taka Nakamura</b></h4></div>
+                    </div>
+                   <center><h5>MASSAGE THERAPIST</h5></center>                                 
+                                     <p><i class="fa fa-phone"></i> (02)94513722</p>
+                                        <p><i class="fa fa-envelope-o"></i> <a href="#">practice@freanchsforestdoctors.com.au</a></p>
+                                        <p>Taka is our in-house Massage Therapist who is a member of the Association Massage Therapy.</p>
+                                        <center><ul class="social-icon">
+                                             <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                             <li><a href="#" class="fa fa-twitter"></a></li>
+                                             <li><a href="#" class="fa fa-instagram"></a></li>
+                                        </ul></center>
+               </div>
+          </div>
+   
+     </div> 
+          
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <!-- FOOTER -->
+     <footer data-stellar-background-ratio="5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="footer-thumb"> 
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Our Address</h4>
+                              <p>24 French Forest Road East<br>French Forest<br>New South Wales-2086.</p>
+
+                              <div class="contact-info">
+                                   <p><i class="fa fa-phone"></i> (02)94513722</p>
+                                   <p><i class="fa fa-envelope-o"></i> <a href="#">info@frenchforestdoctors.com.au</a></p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4"> 
+                         <div class="footer-thumb"> 
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Latest News</h4>
+                              <div class="latest-stories">
+                                   <div class="stories-image">
+                                        <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="stories-info">
+                                        <a href="#"><h5>Amazing Technology</h5></a>
+                                        <span>March 08, 2018</span>
+                                   </div>
+                              </div>
+
+                              <div class="latest-stories">
+                                   <div class="stories-image">
+                                        <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="stories-info">
+                                        <a href="#"><h5>New Healing Process</h5></a>
+                                        <span>February 20, 2018</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4"> 
+                         <div class="footer-thumb">
+                              <div class="opening-hours">
+                                   <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
+                                   <p>Monday - Friday <span>08:00  - 19:00 </span></p>
+                                   <p>Saturday <span>09:00   - 16:00 </span></p>
+                                   <p>Sunday <span>21:00   - 13:00 </span></p>
+                              </div> 
+
+                              <ul class="social-icon">
+                                   <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                   <li><a href="#" class="fa fa-twitter"></a></li>
+                                   <li><a href="#" class="fa fa-instagram"></a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 border-top">
+                         <div class="col-md-4 col-sm-6">
+                              <div class="copyright-text"> 
+                                   <p>Copyright &copy; 2020  French Forest Doctors 
+                                   
+                                   | All rights reserved.</p>
+                              </div>
+                         </div>
+                         <div class="col-md-6 col-sm-6">
+                              <div class="footer-link"> 
+                                   <a href="#">Laboratory Tests</a>
+                                   <a href="#">Departments</a>
+                                   <a href="#">Insurance Policy</a>
+                                   <a href="#">Login</a>
+                              </div>
+                         </div>
+                         <div class="col-md-2 col-sm-2 text-align-center">
+                              <div class="angle-up-btn"> 
+                                  <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-angle-up"></i></a>
+                              </div>
+                         </div>   
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+     <script type="text/javascript">
+          //scrolled js
+          window.onscroll=function()
+          {myFunction()};
+           
+          function myFunction()
+          {
+            var winScroll=document.body.scrollTop || document.documentElement.scrollTop;
+            var height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+            var scrolled=(winScroll/height)*100;
+            document.getElementById("myBar").style.width=scrolled+"%";
+          }
+
+          // collapse js
+          var coll = document.getElementsByClassName("collaps");
+          var i;
+
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                content.style.display = "none";
+              } else {
+                content.style.display = "block";
+              }
+            });
+          }
+
+          //Services tab 
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
+
+
+          // doctors image tabs
+          filterSelection("all")
+          function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+              w3RemoveClass(x[i], "show");
+              if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+          }
+
+          function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+              if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+            }
+          }
+
+          function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+              while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);     
+              }
+            }
+            element.className = arr1.join(" ");
+          }
+
+
+          // Add active class to the current button (highlight it)
+          var btnContainer = document.getElementById("myBtnContainer");
+          var btns = btnContainer.getElementsByClassName("btn");
+          for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function(){
+              var current = document.getElementsByClassName("active");
+              current[0].className = current[0].className.replace(" active", "");
+              this.className += " active";
+            });
+          }
+
+     </script>
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.sticky.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+</html>

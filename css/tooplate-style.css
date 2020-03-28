@@ -12,6 +12,7 @@ http://www.tooplate.com/view/2098-health
     background: #f4f5fa;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    opacity: 1;
   }
 
 
@@ -35,12 +36,15 @@ http://www.tooplate.com/view/2098-health
   h1 {
     color: #252525;
     font-size: 5em;
+
   }
 
   h2 {
     color: #272727;
     font-size: 3em;
     padding-bottom: 10px;
+    
+     text-shadow: 2px 2px;
   }
 
   h3 {
@@ -1298,8 +1302,11 @@ http://www.tooplate.com/view/2098-health
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 100%;
+  width: 50%;
   display: none; /* Hide all elements by default */
+}
+.content:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 /* Clear floats after rows */ 
@@ -1313,8 +1320,20 @@ http://www.tooplate.com/view/2098-health
 .content {
   background-color: white;
   padding: 10px;
+  height: 690px;
 }
  
+  @media screen and( max-width: 900px){
+     .column{
+          width: 50%;
+     }
+ }
+ @media screen and (max-width: 600px)
+ {
+     .column{
+          width: 100%;
+     }
+ }
 
 /* The "show" class is added to the filtered elements */
 .show {
@@ -1336,14 +1355,7 @@ http://www.tooplate.com/view/2098-health
   background-color: #4267b2;
 }
  
- h2{
-  text-shadow: 2px 2px;
- }
-
-
-
-
-
+ 
 /*extra overlay titel*/
 .overlay-titel{
   position: relative;
@@ -1357,7 +1369,7 @@ http://www.tooplate.com/view/2098-health
 .overlay{
   position: absolute;
   bottom: 0; 
-   background-color: #1dd2b0;
+   background-color:#f4f5fad6;
   width: 100%;
   transition: .5s ease;
   opacity: 0;
@@ -1365,7 +1377,53 @@ http://www.tooplate.com/view/2098-health
   font-size: 10px;
   padding: 20px;
   text-align: center;
+  border:1px solid black;
 }
 .overlay-titel:hover .overlay{
   opacity: 1;
 }
+
+
+/*Doctors tabs*/
+.row2 {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row2,
+.row2 > .column2 {
+  padding: 8px;
+  
+}
+
+/* Create three equal columns that floats next to each other */
+.column2{
+  float: left;
+  width: 50%; 
+}
+
+/* Clear floats after rows */ 
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content2 {
+  background-color: white;
+  padding: 10px;
+  height: 690px;
+}
+ 
+  @media screen and( max-width: 900px){
+     .column2{
+          width: 50%;
+     }
+ }
+ @media screen and (max-width: 600px)
+ {
+     .column2{
+          width: 100%;
+     }
+ }
